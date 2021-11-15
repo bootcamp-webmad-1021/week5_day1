@@ -1,0 +1,16 @@
+{{#unless errorMessage}}
+  <h1>{{book.title}}</h1>
+  <h2>{{book.author}}</h2>
+  <p>{{book.description}}</p>
+  <p>Valoración de {{book.rating}}</p>
+{{/unless}}
+
+{{#if isOwn}}
+  <a href="/libros/editar/{{book.id}}">Editar</a>
+{{/if}}
+
+{{#if errorMessage}}
+  <div style="margin-top: 20px; padding: 5px; color: white; background: red; text-align: center; font-size: .95em">
+    {{errorMessage}}
+  </div>
+{{/if}}

@@ -1,0 +1,10 @@
+<h1>Listado de libros</h1>
+
+<ul>
+  {{#each allBooks}}
+    <a href="/libros/detalles/{{_id}}">
+      <li>{{title}} escrito por {{author}}</li>
+    </a>
+  {{/each}}
+</ul>
+

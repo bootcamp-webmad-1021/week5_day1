@@ -1,0 +1,25 @@
+<h1>Editar libro {{title}}</h1>
+
+<form action="/libros/editar/{{id}}" method="POST">
+  <label for="title">
+    Titulo
+    <input value="{{title}}" name="title" id="title" type="text">
+  </label>
+  </br>
+
+  <label for="">
+    Descripción <input value="{{description}}" name="description" type="text">
+  </label>
+  </br>
+
+  <label for="">
+    Autor <input value="{{author}}" name="author" type="text">
+  </label>
+  </br>
+
+  <label for="">
+    Valoración<input value="{{rating}}" name="rating" type="number">
+  </label>
+
+  <button type="submit">Crear libro</button>
+</form>
